@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+  <!-- Normalize.css for better cross-browser consistency -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script type="application/javascript" charset="UTF-8" src="sw.js"></script>
+      <!-- Web Application Manifest -->
+<link rel="manifest" href="manifest.json">
+<!-- Chrome for Android theme color -->
+<meta name="theme-color" content="#2E3AA1">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Blog">
+<link rel="icon" sizes="192x192" href="images/touch/icon-192x192.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Blog">
+<link rel="apple-touch-icon" href="images/touch/icon-192x192.png">
+
+<!-- Tile for Win8 -->
+<meta name="msapplication-TileColor" content="#3372DF">
+<meta name="msapplication-TileImage" content="images/touch/icon-192x192.png">
+  <title>Restaurant Info</title>
+</head>
+
+<body class="inside">
+<!-- Beginning header -->
+<header>
+  <!-- Beginning nav -->
+  <nav>
+    <h1><a href="/">Restaurant Reviews</a></h1>
+  </nav>
+    <!-- End nav -->
+  <!-- Beginning breadcrumb -->
+    --<h3>
+    <ul id="breadcrumb" aria-labelledby="breadcrumb" role="application">
+      <li><a href="/" >Home</a></li>
+    </ul>
+    </h3>
+  <!-- End breadcrumb -->
+
+</header>
+<!-- End header -->
+
+<!-- Beginning main -->
+<main id="maincontent">
+  <!-- Beginning map -->
+  <section id="map-container"  aria-label="restaurant-map" role="application">
+      <div id="map" aria-labelledby="map" role="application"></div>
+  </section>
+  <!-- End map -->
+  <!-- Beginning restaurant -->
+  <section id="restaurant-container" tabindex="0" aria-labelledby="restaurant-container" role="application">
+      <h2 id="restaurant-name"   aria-labelledby="restaurant-name" role="application"></h2>
+      <img id="restaurant-img" aria-labelledby="restaurant-img" role="application">
+      <p id="restaurant-cuisine" tabindex="0" aria-labelledby="restaurant-cuisine" role="application"></p>
+      <p id="restaurant-address" tabindex="0" aria-labelledby="restaurant-address-label" role="application"></p>
+      <table id="restaurant-hours" tabindex="0" aria-labelledby="restaurant-hours-label" role="application"></table>
+  </section>
+  <!-- end restaurant -->
+  <!-- Beginning reviews -->
+  <section id="reviews-container" tabindex="0" aria-labelledby="restaurant-container" role="application">
+    <ul id="reviews-list" tabindex="0" aria-labelledby="reviews-list" role="application"></ul>
+  </section>
+  <!-- End reviews -->
+</main>
+<!-- End main -->
+
+<!-- Beginning footer -->
+<footer id="footer">
+  Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+</footer>
+<!-- End footer -->
+
+<!-- Beginning scripts -->
+<!-- Database helpers -->
+<!-- DB javascript file -->
+
+<script type="application/javascript" charset="UTF-8" src="sw.js"></script>
+<script type="application/javascript" src="js/idb.js"></script>
+<script type="application/javascript" src="js/dbhelper.js"></script>
+
+<!-- Main javascript file -->
+<script type="application/javascript" src="js/restaurant_info.js"></script>
+
+
+<!-- Google Maps -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKlmBk4YXWs3FDOGxCmOdwFEVcVPQdfkg&libraries=places&callback=initMap"></script>
+<!-- End scripts -->
+</body>
+</html>

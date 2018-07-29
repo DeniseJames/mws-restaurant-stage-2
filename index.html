@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+
+<head>
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css">
+    <!-- Web Application Manifest -->
+<link rel="manifest" href="manifest.json">
+<!-- Chrome for Android theme color -->
+<meta name="theme-color" content="#2E3AA1">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Blog">
+<link rel="icon" sizes="192x192" href="images/touch/icon-192x192.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Blog">
+<link rel="apple-touch-icon" href="images/touch/icon-192x192.png">
+
+<!-- Tile for Win8 -->
+<meta name="msapplication-TileColor" content="#3372DF">
+<meta name="msapplication-TileImage" content="images/touch/icon-192x192.png">
+  <title>Restaurant Reviews</title>
+</head>
+
+<body >
+<header>
+  <nav>
+    <!-- Set up index tab to us keyboard to nav-->
+    <h1><a href="/" >Restaurant Reviews</a></h1>
+  </nav>
+</header>
+
+<main id="maincontent">
+
+  <section id="map-container" aria-labelledby="map-container" role="application">
+    <div id="map" aria-labelledby="map" role="application"></div>
+  </section>
+  <section>
+    <div class="filter-options" >
+      <h2>Filter Results</h2>
+      <!--<div class="filter-selects">-->
+      <select  id="neighborhoods-select" tabindex="0"  aria-label="Select neighborhood " role="application" onchange=updateRestaurants()>
+        <option value="all" aria-labelledby="neighborhoods-select" role="link" tabindex="0">All Neighborhoods</option>
+       </select>
+      <!-- <label id="map-aria-description" class="map-aria-description"> Google Map Application-->
+      <select  id="cuisines-select" name="cuisines" tabindex="0"aria-label="Select Cuisine"role="application" onchange="updateRestaurants()">
+        <option value="all" aria-labelledby="cuisines-select"  role="link">All Cuisines</option>
+      </select>
+    </div>
+        <ul id="restaurants-list"></ul>
+  </section>
+
+</main>
+
+</script>
+<script type="application/javascript" charset="UTF-8" src="sw.js"></script>
+<script type="application/javascript" charset="utf-8" src="js/idb.js"></script>
+<script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+<script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+<!-- Google Maps -->
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKlmBk4YXWs3FDOGxCmOdwFEVcVPQdfkg&libraries=places&callback=initMap"></script>
+
+<footer id="footer">
+  Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+</footer>
+
+</body>
+
+</html>
+
+
