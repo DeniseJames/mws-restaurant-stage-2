@@ -10,14 +10,10 @@
             "src": "./img/1.jpg",
           "sizes": "192x192",
           "type": "jpg/png"
-        }, {
+        }, 
+        {
           "src": "./img/1.jpg",
-          "sizes": "256x256",
-          "type": "jpg/png"
-        },
-    {
-          "src": "./img/1.jpg",
-          "sizes": "256x256",
+          "sizes": "512x512",
           "type": "jpg/png"
         },
         {
@@ -28,24 +24,12 @@
               "src": "./img/2.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
-            "src": "./img/2.jpg",
-            "sizes": "256x256",
-            "type": "jpg/png"
-          },
+          }, 
           {
             "src": "./img/2.jpg",
-            "sizes": "128x128",
+            "sizes": "512x512",
             "type": "jpg/png"
-          }, {
-              "src": "./img/2.jpg",
-            "sizes": "192x192",
-            "type": "jpg/png"
-          }, {
-            "src": "./img/2.jpg",
-            "sizes": "256x256",
-            "type": "jpg/png"
-          },
+          },          
           {
             "src": "./img/3.jpg",
             "sizes": "128x128",
@@ -54,9 +38,10 @@
               "src": "./img/3.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/3.jpg",
-            "sizes": "256x256",
+            "sizes": "512x512",
             "type": "jpg/png"
           },
           {
@@ -67,22 +52,25 @@
               "src": "./img/4.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/4.jpg",
-            "sizes": "256x256",
+            "sizes": "512x512",
             "type": "jpg/png"
           },
           {
             "src": "./img/5.jpg",
             "sizes": "128x128",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
               "src": "./img/5.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/5.jpg",
-            "sizes": "256x256",
+            "sizes": "512x512",
             "type": "jpg/png"
           },
           {
@@ -93,22 +81,24 @@
               "src": "./img/6.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/6.jpg",
-            "sizes": "256x256",
+            "sizes": "512x512",
             "type": "jpg/png"
           },
           {
-            "src": "./img/6.jpg",
+            "src": "./img/7.jpg",
             "sizes": "128x128",
             "type": "jpg/png"
           }, {
               "src": "./img/7.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/7.jpg",
-            "sizes": "256x256",
+            "sizes": "512x512",
             "type": "jpg/png"
           },
           {
@@ -119,24 +109,27 @@
               "src": "./img/8.jpg",
             "sizes": "192x192",
             "type": "jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/8.jpg",
-            "sizes": "256x256",
+            "sizes": "512x512",
             "type": "jpg/png"
           },
           
-{
+          {
             "src": "./img/9.jpg",
             "sizes": "128x128",
             "type": "9.jpg/png"
-          }, {
+          }, 
+          {
               "src": "./img/9.jpg",
             "sizes": "192x192",
             "type": "9.jpg/png"
-          }, {
+          },
+          {
             "src": "./img/9.jpg",
-            "sizes": "256x256",
-            "type": "9.jpg/png"
+            "sizes": "512x512",
+            "type": "jpg/png"
           },
           {
             "src": "./img/10.jpg",
@@ -146,10 +139,11 @@
               "src": "./img/10.jpg",
             "sizes": "192x192",
             "type": "10.jpg/png"
-          }, {
+          }, 
+          {
             "src": "./img/10.jpg",
-            "sizes": "256x256",
-            "type": "10.jpg/png"
+            "sizes": "512x512",
+            "type": "jpg/png"
           }
     ],
     "background_color": "#3E4EB8",
